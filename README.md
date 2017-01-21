@@ -30,6 +30,10 @@ that can be found in `MyIdentityServer/Configuration/Clients.cs`.
   * scope: `api.internal`
   * scope: `api.thirdparty`
 
+* `openidconnect.is4` (*hybrid*, *client_credentials*)
+  * scope: `api.internal`
+  * scope: `api.thirdparty`
+
 I've then in my WebAPI application setup authorization policies
 to limit API consumers to the different APIs. Internal API consumers
 will have access to `api.internal` and `api.thirdparty` while 

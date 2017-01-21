@@ -157,7 +157,7 @@ namespace MyIdentityServer
                 SignInScheme = "cookie",
                 ResponseType = "code id_token",
                 AuthenticationScheme = "oidc",
-                Scope = { "role", "profile" },
+                Scope = { "role", "profile", "api.internal" },
                 GetClaimsFromUserInfoEndpoint = true,
                 RequireHttpsMetadata = false,
                 TokenValidationParameters = new TokenValidationParameters()
