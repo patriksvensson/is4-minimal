@@ -160,6 +160,7 @@ namespace MyIdentityServer
                 Scope = { "role", "profile", "api.internal" },
                 GetClaimsFromUserInfoEndpoint = true,
                 RequireHttpsMetadata = false,
+                PostLogoutRedirectUri = "http://localhost:5000",
                 TokenValidationParameters = new TokenValidationParameters()
                 {
                     NameClaimType = "name",

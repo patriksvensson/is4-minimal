@@ -60,6 +60,16 @@ services.AddAuthorization(options =>
 
 Everything works as expected here.
 
+## Problems
+
+For some reason, the user don't get properly logged out in the `MyIdentityServer` application.
+
+1. Click `Claims` menu and verify that there are no claims associated with the logged in user.
+2. If you go to `http://localhost:5000/admin` and login (user: `patrik`, pass: `Password123!`), you will get to the admin page.
+3. Click `Logout`
+4. Click `Claims`. Claims are still accessable.
+5. Go to `http://localhost:5000/admin`. Page is still accessable.
+
 ## Questions
 
 1. Is this the way to scope the different API:s or have I misunderstood something?
