@@ -64,7 +64,7 @@ Everything works as expected here.
 
 For some reason, the user don't get properly logged out in the `MyIdentityServer` application.
 
-1. Go to `http://localhost:5000/admin` and click the `Claims` menu to verify that there are no claims associated with the logged in user.
+1. Go to `http://localhost:5000` and click the `Claims` menu to verify that there are no claims associated with the logged in user.
 2. If you go to `http://localhost:5000/admin` and login (user: `patrik`, pass: `Password123!`), you will get to the admin page.
 3. Click `Logout`
 4. Click `Claims`. Claims are still accessable.
